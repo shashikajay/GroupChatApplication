@@ -8,35 +8,34 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="647.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.groupChat.controller.ClientLoginFormController">
+<AnchorPane prefHeight="590.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.groupChat.controller.ClientLoginFormController">
    <children>
-      <AnchorPane fx:id="Login" layoutX="-1.0" layoutY="-1.0" prefHeight="657.0" prefWidth="479.0" styleClass="buttonColour" stylesheets="@../assets/css/MetropolitantColourSchema.css">
+      <AnchorPane fx:id="Login" layoutX="-1.0" layoutY="-1.0" prefHeight="530.0" prefWidth="791.0" styleClass="topPaneBackgroundcolor" stylesheets="@../assets/css/MetropolitantColourSchema.css">
          <children>
-            <Label layoutX="42.0" layoutY="24.0" prefHeight="80.0" prefWidth="173.0" text="CHAT" textFill="#ffcc00">
+            <Label layoutX="240.0" layoutY="37.0" prefHeight="80.0" prefWidth="312.0" text="GroupChat" textFill="WHITE">
                <font>
                   <Font name="Arial Black" size="53.0" />
                </font>
             </Label>
-            <AnchorPane layoutX="22.0" layoutY="136.0" prefHeight="498.0" prefWidth="51.0" styleClass="backgroundcolor" stylesheets="@../assets/css/MetropolitantColourSchema.css" />
-            <AnchorPane layoutX="116.0" layoutY="191.0" prefHeight="370.0" prefWidth="312.0" styleClass="circleWhite" stylesheets="@../assets/css/style.css">
+            <AnchorPane layoutX="22.0" layoutY="136.0" prefHeight="498.0" prefWidth="51.0" styleClass="backgroundcolor" stylesheets="@../assets/css/MetropolitantColourSchema.css" visible="false" />
+            <AnchorPane layoutX="240.0" layoutY="143.0" prefHeight="370.0" prefWidth="312.0" styleClass="box" stylesheets="@../assets/css/style.css">
                <children>
-                  <ImageView fitHeight="98.0" fitWidth="95.0" layoutX="109.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="113.0" fitWidth="120.0" layoutX="100.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../assets/images/icons8-user-96.png" />
+                        <Image url="@../assets/images/groupchat.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="69.0" layoutY="127.0" prefHeight="27.0" prefWidth="111.0" text="User Name">
+                  <Label layoutX="80.0" layoutY="145.0" prefHeight="40.0" prefWidth="152.0" text="User Name" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="18.0" />
+                        <Font name="System Bold" size="28.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="txtUserName" layoutX="50.0" layoutY="166.0" prefHeight="38.0" prefWidth="232.0" styleClass="circleSerach" stylesheets="@../assets/css/style.css">
+                  <TextField fx:id="txtUserName" layoutX="40.0" layoutY="200.0" prefHeight="38.0" prefWidth="232.0" styleClass="sidebaritem" stylesheets="@../assets/css/style.css">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </TextField>
-                  <Button fx:id="btnlogin" layoutX="93.0" layoutY="269.0" mnemonicParsing="false" onAction="#btnloginOnAction" prefHeight="46.0" prefWidth="111.0" styleClass="topPaneBackground3" stylesheets="@../assets/css/MetropolitantColourSchema.css" text="Login" textFill="WHITE">
+                  <Button fx:id="btnlogin" layoutX="101.0" layoutY="268.0" mnemonicParsing="false" onAction="#btnloginOnAction" prefHeight="46.0" prefWidth="111.0" styleClass="specialText" stylesheets="@../assets/css/MetropolitantColourSchema.css" text="Login" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="22.0" />
                      </font>
